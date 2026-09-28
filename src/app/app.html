@@ -1,0 +1,315 @@
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg container site-nav" aria-label="Navegação principal">
+    <a class="brand" href="#inicio" aria-label="Claudete Lauermann, início" (click)="closeMenu()"
+      ><span class="brand-mark" aria-hidden="true">c</span
+      ><span class="brand-name">Claudete Lauermann<small>Terapia Holística</small></span></a
+    >
+    <div class="nav-actions order-lg-3">
+      <button
+        class="theme-toggle"
+        type="button"
+        (click)="themeService.toggle()"
+        [attr.aria-label]="themeService.isDark() ? 'Ativar tema claro' : 'Ativar tema escuro'"
+        [attr.title]="themeService.isDark() ? 'Ativar tema claro' : 'Ativar tema escuro'"
+      >
+        <span aria-hidden="true">{{ themeService.isDark() ? '☼' : '☾' }}</span></button
+      ><a
+        class="button button-primary header-cta"
+        [href]="
+          whatsapp(
+            'Olá, Claudete! Vi seu site e gostaria de saber mais sobre os atendimentos de Terapia Holística.'
+          )
+        "
+        target="_blank"
+        rel="noopener noreferrer"
+        >Fale comigo <span aria-hidden="true">↗</span></a
+      ><button
+        class="navbar-toggler mobile-menu-button"
+        type="button"
+        [attr.aria-label]="menuOpen() ? 'Fechar menu' : 'Abrir menu'"
+        aria-controls="primary-links"
+        [attr.aria-expanded]="menuOpen()"
+        (click)="menuOpen.update((value) => !value)"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse order-lg-2" id="primary-links" [class.show]="menuOpen()">
+      <div class="navbar-nav ms-auto nav-links">
+        <a class="nav-link" href="#terapias" (click)="closeMenu()">Terapias</a
+        ><a class="nav-link" href="#sobre" (click)="closeMenu()">Sobre</a
+        ><a class="nav-link" href="#atendimento" (click)="closeMenu()">Atendimento</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main id="conteudo">
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Cuidado integrativo em Canoas, RS</p>
+        <h1>Um espaço para <em>voltar ao seu equilíbrio.</em></h1>
+        <p class="hero-description">
+          Terapias holísticas com presença e acolhimento. Um convite para cuidar de você por
+          inteiro, no seu tempo.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="button button-primary"
+            [href]="
+              whatsapp(
+                'Olá, Claudete! Vi seu site e gostaria de saber mais sobre os atendimentos de Terapia Holística.'
+              )
+            "
+            target="_blank"
+            rel="noopener noreferrer"
+            >Vamos conversar <span aria-hidden="true">↗</span></a
+          ><a class="text-link" href="#terapias"
+            >Conheça as terapias <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="hero-note">
+          <span class="note-icon" aria-hidden="true">✳</span
+          ><span>Escuta atenta, cuidado individual<br />e respeito à sua jornada.</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=85"
+          alt="Luz suave do sol atravessando uma paisagem verde ao amanhecer"
+          width="1200"
+          height="1450"
+          fetchpriority="high"
+        />
+        <div class="image-caption">
+          <span class="caption-flower" aria-hidden="true">✳</span
+          ><span>Seu bem-estar começa<br />com um momento de cuidado.</span>
+        </div>
+        <span class="image-index">01 — 06</span>
+      </div>
+    </div>
+    <div class="hero-bottom container">
+      <span>Acupuntura · Reiki · Reflexologia</span
+      ><a href="#terapias" aria-label="Descer para conhecer as terapias">↓</a
+      ><span>Atendimento em Canoas — RS</span>
+    </div>
+  </section>
+  <section class="intro-strip" aria-label="Nossa abordagem">
+    <div class="container intro-content">
+      <span class="eyebrow">CUIDADO COM PRESENÇA</span>
+      <p>Cada pessoa é única. O cuidado também deve ser.</p>
+      <span class="intro-spark" aria-hidden="true">✳</span>
+    </div>
+  </section>
+  <section class="section therapies-section" id="terapias">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CAMINHOS DE CUIDADO</p>
+          <h2>Terapias para o seu <em>bem-estar.</em></h2>
+        </div>
+        <p class="section-lede">
+          Conheça as práticas disponíveis e encontre, junto comigo, o cuidado mais adequado para o
+          seu momento.
+        </p>
+      </div>
+      <div class="row g-3 therapy-grid">
+        @for (therapy of therapies; track therapy.name) {
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="therapy-card">
+              <div class="therapy-card-top">
+                <span class="therapy-symbol" aria-hidden="true">{{ therapy.symbol }}</span
+                ><span class="therapy-number">{{ therapy.number }}</span>
+              </div>
+              <h3>{{ therapy.name }}</h3>
+              <p>{{ therapy.description }}</p>
+              <a
+                class="therapy-link"
+                [href]="whatsapp(therapyMessage(therapy.name))"
+                target="_blank"
+                rel="noopener noreferrer"
+                [attr.aria-label]="'Saiba mais sobre ' + therapy.name + ' pelo WhatsApp'"
+                >Saiba mais <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+        }
+      </div>
+      <p class="care-note">
+        As terapias integrativas são práticas complementares e não substituem avaliação ou
+        tratamento médico.
+      </p>
+    </div>
+  </section>
+  <section class="about-section section" id="sobre">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <img
+          src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=1000&q=85"
+          alt="Folhas verdes delicadas em luz natural"
+          width="1000"
+          height="1180"
+          loading="lazy"
+        />
+        <div class="about-stamp">
+          <span>cuidado</span><strong>com<br />presença</strong><span aria-hidden="true">✳</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">UM POUCO SOBRE ESTE ESPAÇO</p>
+        <h2>Seu momento de pausa, <em>acolhimento e cuidado.</em></h2>
+        <p>
+          Sou Claudete Lauermann, terapeuta holística em Canoas. Ofereço um espaço de escuta e
+          cuidado integrativo, com práticas escolhidas com atenção a cada pessoa.
+        </p>
+        <p>
+          Vamos conversar sobre o que você busca? O primeiro passo pode ser uma conversa simples,
+          sem pressa.
+        </p>
+        <a
+          class="text-link about-link"
+          [href]="
+            whatsapp(
+              'Olá, Claudete! Gostaria de conversar sobre os atendimentos de Terapia Holística.'
+            )
+          "
+          target="_blank"
+          rel="noopener noreferrer"
+          >Conheça meu trabalho <span aria-hidden="true">↗</span></a
+        >
+        <div class="signature">Claudete Lauermann<span>Terapia Holística</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="benefits-section section">
+    <div class="container">
+      <div class="benefits-heading">
+        <p class="eyebrow">UM CUIDADO FEITO PARA VOCÊ</p>
+        <h2>Presença em cada <em>encontro.</em></h2>
+      </div>
+      <div class="row g-4 benefits-grid">
+        <div class="col-12 col-md-4">
+          <article class="benefit">
+            <span>01</span>
+            <h3>Escuta com atenção</h3>
+            <p>Um atendimento que começa entendendo o que é importante para você.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="benefit">
+            <span>02</span>
+            <h3>Um tempo para si</h3>
+            <p>Um espaço tranquilo para desacelerar e dedicar atenção ao seu bem-estar.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="benefit">
+            <span>03</span>
+            <h3>Cuidado individual</h3>
+            <p>As práticas são conversadas com você, respeitando sua história e seu momento.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="location-section section" id="atendimento">
+    <div class="container location-grid">
+      <div class="location-mark" aria-hidden="true"><span>⌖</span></div>
+      <div class="location-copy">
+        <p class="eyebrow">PERTO DE VOCÊ</p>
+        <h2>Cuidado holístico em <em>Canoas.</em></h2>
+        <p>
+          Atendimento em Canoas, Rio Grande do Sul. Entre em contato para conversar sobre os
+          atendimentos e consultar os horários disponíveis.
+        </p>
+        <a
+          class="button button-outline"
+          [href]="
+            whatsapp(
+              'Olá, Claudete! Gostaria de consultar os horários disponíveis para atendimento em Canoas.'
+            )
+          "
+          target="_blank"
+          rel="noopener noreferrer"
+          >Consultar horários <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      <div class="location-aside">
+        <span>LOCAL DE ATENDIMENTO</span><strong>Canoas</strong
+        ><span>Rio Grande do Sul, Brasil</span>
+        <div class="location-line"></div>
+        <span>Agendamentos e informações</span
+        ><a
+          [href]="
+            whatsapp(
+              'Olá, Claudete! Gostaria de consultar os horários disponíveis para atendimento em Canoas.'
+            )
+          "
+          target="_blank"
+          rel="noopener noreferrer"
+          >(51) 99650-0528</a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="final-cta">
+    <div class="container cta-inner">
+      <span class="cta-flower" aria-hidden="true">✳</span>
+      <p class="eyebrow">SEU PRÓXIMO PASSO</p>
+      <h2>Vamos conversar sobre <em>o seu cuidado?</em></h2>
+      <p>Estou à disposição para esclarecer suas dúvidas e encontrar um momento para você.</p>
+      <a
+        class="button button-light"
+        [href]="
+          whatsapp(
+            'Olá, Claudete! Vi seu site e gostaria de saber mais sobre os atendimentos de Terapia Holística.'
+          )
+        "
+        target="_blank"
+        rel="noopener noreferrer"
+        >Chamar no WhatsApp <span aria-hidden="true">↗</span></a
+      ><span class="cta-decoration" aria-hidden="true">✳</span>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <a class="brand footer-brand" href="#inicio"
+      ><span class="brand-mark" aria-hidden="true">c</span
+      ><span class="brand-name">Claudete Lauermann<small>Terapia Holística</small></span></a
+    >
+    <p>Cuidado integrativo, com calma e presença.</p>
+    <div class="footer-links">
+      <a href="#terapias">Terapias</a><a href="#sobre">Sobre</a
+      ><a href="#atendimento">Atendimento</a
+      ><a
+        [href]="
+          whatsapp(
+            'Olá, Claudete! Vi seu site e gostaria de saber mais sobre os atendimentos de Terapia Holística.'
+          )
+        "
+        target="_blank"
+        rel="noopener noreferrer"
+        >WhatsApp ↗</a
+      >
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© {{ year }} Claudete Lauermann</span><span>Canoas · Rio Grande do Sul</span
+    ><a href="#inicio">Voltar ao início ↑</a>
+  </div>
+</footer>
+<a
+  class="whatsapp-float"
+  [href]="
+    whatsapp(
+      'Olá, Claudete! Vi seu site e gostaria de saber mais sobre os atendimentos de Terapia Holística.'
+    )
+  "
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Fale com Claudete pelo WhatsApp"
+  ><span aria-hidden="true">◉</span><span class="float-label">Vamos conversar</span></a
+>
