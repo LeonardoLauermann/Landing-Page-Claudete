@@ -12,7 +12,7 @@ interface Therapy {
 export class App {
   readonly themeService = inject(ThemeService);
   readonly menuOpen = signal(false);
-  readonly phone = '5551996500528';
+  readonly phone = '5551993930667';
   readonly year = new Date().getFullYear();
   readonly therapies: readonly Therapy[] = [
     {
