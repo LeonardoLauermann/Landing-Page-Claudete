@@ -31,7 +31,7 @@ export class App {
     {
       number: '03',
       name: 'Cone Hindu',
-      description: 'Um momento de cuidado e relaxamento dedicado à região da cabeça e dos ouvidos.',
+      description: 'Um momento de cuidado e relaxamento dedicado à região da cabeça e dos ouvidos, com equilíbrio dos chacras.',
       symbol: '◒',
     },
     {

@@ -43,13 +43,13 @@
   border-radius: 50%;
   color: var(--app-primary);
   font-family: var(--font-serif);
-  font-size: 29px;
+  font-size: 1.8125rem;
   font-style: italic;
   line-height: 1;
 }
 .brand-name {
   font-family: var(--font-serif);
-  font-size: 18px;
+  font-size: 1.125rem;
   letter-spacing: -0.035em;
   line-height: 1.1;
 }
@@ -58,7 +58,7 @@
   margin-top: 5px;
   color: var(--app-text-muted);
   font-family: var(--font-sans);
-  font-size: 9px;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -69,7 +69,7 @@
 }
 .nav-links .nav-link {
   color: var(--app-text-muted);
-  font-size: 13px;
+  font-size: 0.9rem;
   transition: color 0.2s ease;
 }
 .nav-links .nav-link:hover {
@@ -87,7 +87,7 @@
   border-radius: 50%;
   background: transparent;
   color: var(--app-text);
-  font-size: 19px;
+  font-size: 1.1875rem;
 }
 .theme-toggle:hover {
   background: var(--app-surface-secondary);
@@ -101,7 +101,7 @@
   padding: 0 22px;
   border: 1px solid transparent;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   transition:
@@ -123,7 +123,7 @@
 .header-cta {
   min-height: 42px;
   padding: 0 18px;
-  font-size: 11px;
+  font-size: 0.9rem;
 }
 .mobile-menu-button {
   display: none;
@@ -152,7 +152,7 @@
 .eyebrow {
   margin: 0 0 20px;
   color: var(--app-primary);
-  font-size: 9px;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   line-height: 1.5;
@@ -196,7 +196,7 @@ h2 em {
   max-width: 410px;
   margin: 24px 0 27px;
   color: var(--app-text-muted);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.9;
 }
 .hero-actions {
@@ -209,14 +209,14 @@ h2 em {
   align-items: center;
   gap: 10px;
   color: var(--app-text);
-  font-size: 11px;
+  font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
 }
 .text-link span,
 .therapy-link span {
   color: var(--app-primary);
-  font-size: 17px;
+  font-size: 1.0625rem;
   transition: transform 0.2s ease;
 }
 .text-link:hover span,
@@ -229,7 +229,7 @@ h2 em {
   gap: 13px;
   margin-top: 58px;
   color: var(--app-text-muted);
-  font-size: 10px;
+  font-size: 0.875rem;
   line-height: 1.65;
 }
 .note-icon {
@@ -240,7 +240,7 @@ h2 em {
   border: 1px solid var(--app-border);
   border-radius: 50%;
   color: var(--app-primary);
-  font-size: 16px;
+  font-size: 1rem;
 }
 .hero-visual {
   position: relative;
@@ -268,20 +268,20 @@ h2 em {
   border-radius: 5px;
   background: var(--app-surface);
   color: var(--app-text-muted);
-  font-size: 10px;
+  font-size: 0.875rem;
   line-height: 1.6;
   box-shadow: 0 12px 32px #26351d14;
 }
 .caption-flower {
   color: var(--app-primary);
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .image-index {
   position: absolute;
   top: 45%;
   right: -46px;
   color: var(--app-text-muted);
-  font-size: 9px;
+  font-size: 0.9rem;
   letter-spacing: 0.15em;
   writing-mode: vertical-rl;
 }
@@ -292,12 +292,12 @@ h2 em {
   justify-content: space-between;
   border-top: 1px solid var(--app-border);
   color: var(--app-text-muted);
-  font-size: 9px;
+  font-size: 0.9rem;
   letter-spacing: 0.04em;
 }
 .hero-bottom a {
   color: var(--app-primary);
-  font-size: 19px;
+  font-size: 1.1875rem;
   text-decoration: none;
 }
 .intro-strip {
@@ -321,7 +321,7 @@ h2 em {
 }
 .intro-spark {
   color: var(--app-accent);
-  font-size: 35px;
+  font-size: 2.1875rem;
 }
 .section {
   padding: 110px 0;
@@ -347,7 +347,7 @@ h2 em {
   max-width: 350px;
   margin: 0 0 6px;
   color: var(--app-text-muted);
-  font-size: 12px;
+  font-size: 0.9rem;
   line-height: 1.8;
 }
 .therapy-grid > div {
@@ -379,17 +379,17 @@ h2 em {
 }
 .therapy-symbol {
   color: var(--app-primary);
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .therapy-number {
   color: var(--app-text-muted);
-  font-size: 9px;
+  font-size: 0.9rem;
   letter-spacing: 0.16em;
 }
 .therapy-card h3 {
   margin: 22px 0 8px;
   font-family: var(--font-serif);
-  font-size: 23px;
+  font-size: 1.4375rem;
   font-weight: 500;
   letter-spacing: -0.025em;
 }
@@ -397,7 +397,7 @@ h2 em {
   max-width: 280px;
   margin: 0 0 18px;
   color: var(--app-text-muted);
-  font-size: 11px;
+  font-size: 0.9rem;
   line-height: 1.75;
 }
 .therapy-link {
@@ -407,14 +407,14 @@ h2 em {
   width: fit-content;
   margin-top: auto;
   color: var(--app-text);
-  font-size: 10px;
+  font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
 }
 .care-note {
   margin: 25px 0 0;
   color: var(--app-text-muted);
-  font-size: 10px;
+  font-size: 0.875rem;
   text-align: center;
 }
 .about-section {
@@ -453,20 +453,20 @@ h2 em {
   color: var(--app-primary);
 }
 .about-stamp > span:first-child {
-  font-size: 8px;
+  font-size: 0.9rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 .about-stamp strong {
   margin: 4px 0;
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
   line-height: 0.95;
   text-align: center;
 }
 .about-stamp > span:last-child {
-  font-size: 13px;
+  font-size: 0.9rem;
 }
 .about-copy {
   max-width: 500px;
@@ -476,7 +476,7 @@ h2 em {
 }
 .about-copy > p:not(.eyebrow) {
   color: var(--app-text-muted);
-  font-size: 12px;
+  font-size: 0.9rem;
   line-height: 1.95;
 }
 .about-copy > p + p {
@@ -489,7 +489,7 @@ h2 em {
   margin-top: 33px;
   color: var(--app-primary);
   font-family: var(--font-serif);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: italic;
 }
 .signature span {
@@ -497,7 +497,7 @@ h2 em {
   margin-top: 5px;
   color: var(--app-text-muted);
   font-family: var(--font-sans);
-  font-size: 8px;
+  font-size: 0.9rem;
   font-style: normal;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -522,20 +522,20 @@ h2 em {
 }
 .benefit > span {
   color: var(--app-primary);
-  font-size: 9px;
+  font-size: 0.9rem;
   letter-spacing: 0.15em;
 }
 .benefit h3 {
   margin: 21px 0 8px;
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 500;
 }
 .benefit p {
   max-width: 280px;
   margin: 0;
   color: var(--app-text-muted);
-  font-size: 11px;
+  font-size: 0.9rem;
   line-height: 1.8;
 }
 .location-section {
@@ -555,7 +555,7 @@ h2 em {
   border: 1px solid var(--app-border);
   border-radius: 50%;
   color: var(--app-primary);
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .location-copy {
   max-width: 550px;
@@ -570,7 +570,7 @@ h2 em {
   max-width: 460px;
   margin: 17px 0 22px;
   color: var(--app-text-muted);
-  font-size: 12px;
+  font-size: 0.9rem;
   line-height: 1.85;
 }
 .button-outline {
@@ -591,14 +591,14 @@ h2 em {
 }
 .location-aside > span {
   color: var(--app-text-muted);
-  font-size: 8px;
+  font-size: 0.9rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
 .location-aside strong {
   color: var(--app-text);
   font-family: var(--font-serif);
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 400;
 }
 .location-line {
@@ -609,7 +609,7 @@ h2 em {
 }
 .location-aside a {
   color: var(--app-primary);
-  font-size: 12px;
+  font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -644,7 +644,7 @@ h2 em {
   max-width: 450px;
   margin: 17px 0 24px;
   color: #e0e7db;
-  font-size: 12px;
+  font-size: 0.9rem;
   line-height: 1.8;
 }
 .button-light {
@@ -658,14 +658,14 @@ h2 em {
 .cta-flower {
   margin-bottom: 18px;
   color: #ccdabf;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .cta-decoration {
   position: absolute;
   right: 2%;
   bottom: -70px;
   color: #ffffff12;
-  font-size: 280px;
+  font-size: 17.5rem;
   line-height: 1;
 }
 .site-footer {
@@ -683,7 +683,7 @@ h2 em {
   margin: 0;
   color: var(--app-text-muted);
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 1rem;
   font-style: italic;
 }
 .footer-links {
@@ -694,7 +694,7 @@ h2 em {
 .footer-links a,
 .footer-bottom a {
   color: var(--app-text-muted);
-  font-size: 9px;
+  font-size: 0.9rem;
   text-decoration: none;
 }
 .footer-links a:hover,
@@ -707,7 +707,7 @@ h2 em {
   align-items: center;
   justify-content: space-between;
   color: var(--app-text-muted);
-  font-size: 9px;
+  font-size: 0.9rem;
 }
 .whatsapp-float {
   position: fixed;
@@ -725,7 +725,7 @@ h2 em {
   border-radius: 999px;
   background: #315e3b;
   color: white;
-  font-size: 19px;
+  font-size: 1.1875rem;
   text-decoration: none;
   box-shadow: 0 6px 20px #162d1c38;
   transition: transform 0.2s ease;
@@ -735,7 +735,7 @@ h2 em {
   color: #fff;
 }
 .float-label {
-  font-size: 10px;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 @media (max-width: 991.98px) {
@@ -785,7 +785,7 @@ h2 em {
   .location-mark {
     width: 65px;
     height: 65px;
-    font-size: 32px;
+    font-size: 2rem;
   }
   .footer-main {
     grid-template-columns: 1fr 1fr;
@@ -819,7 +819,7 @@ h2 em {
   }
   .hero-description {
     max-width: 450px;
-    font-size: 13px;
+    font-size: 0.9rem;
   }
   .hero-note {
     margin-top: 30px;
@@ -834,7 +834,7 @@ h2 em {
     min-height: 50px;
   }
   .hero-bottom span {
-    font-size: 8px;
+    font-size: 0.9rem;
   }
   .intro-content {
     min-height: 125px;
@@ -842,14 +842,14 @@ h2 em {
   }
   .intro-content .eyebrow {
     max-width: 90px;
-    font-size: 8px;
+    font-size: 0.9rem;
   }
   .intro-content p {
     flex: 1;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .intro-spark {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   .section {
     padding: 75px 0;
